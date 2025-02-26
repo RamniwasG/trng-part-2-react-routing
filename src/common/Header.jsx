@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router";
 function Header(props) {
     const [selectedMenuItem, setSelectedMenuItem] = useState('home')
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-light m-2">
         <h2>App Logo</h2>
         <div className="navbar-nav flex-row">
             {props.menuList.map((menuItem) => {
