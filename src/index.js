@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router";
 import reportWebVitals from './reportWebVitals';
+import Header from './common/Header';
+import { headerMenuList } from './constants/headerConstants';
+import ProductsPage from './components/Products';
+import GalleryPage from './components/Gallery';
+import AboutPage from './components/AboutUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <div className='container-fluid'>
+        <Header menuList={headerMenuList} />
+        <div className='App-container'>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/home" element={<App />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
