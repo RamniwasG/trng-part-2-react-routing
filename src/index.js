@@ -10,6 +10,7 @@ import { headerMenuList } from './constants/headerConstants';
 import ProductsPage from './components/Products';
 import GalleryPage from './components/Gallery';
 import AboutPage from './components/AboutUs';
+import SerivicesComp from './components/Services';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path='/services' element={<SerivicesComp />} />
           </Routes>
         </div>
       </div>
