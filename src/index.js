@@ -8,9 +8,9 @@ import reportWebVitals from './reportWebVitals';
 import Header from './common/Header';
 import { headerMenuList } from './constants/headerConstants';
 import ProductsPage from './components/Products';
-import GalleryPage from './components/Gallery';
+// import GalleryPage from './components/Gallery';
 import AboutPage from './components/AboutUs';
-import SerivicesComp from './components/Services';
+import ServicesComp from './components/Services';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,9 +23,9 @@ root.render(
             <Route path="/" element={<App />} />
             <Route path="/home" element={<App />} />
             <Route path="/products" element={<ProductsPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
+            {/* <Route path="/gallery" element={<GalleryPage />} /> */}
             <Route path="/about" element={<AboutPage />} />
-            <Route path='/services' element={<SerivicesComp />} />
+            <Route path='/services' element={<ServicesComp />} />
           </Routes>
         </div>
       </div>
