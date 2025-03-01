@@ -20,3 +20,15 @@
   color: #dc354599;
   text-decoration: underline;
 }
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 580px) {
+  .text-ellipsis {
+    max-width: 150px;
+  }
+}
