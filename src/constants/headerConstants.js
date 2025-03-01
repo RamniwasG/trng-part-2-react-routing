@@ -21,6 +21,7 @@ export const menulist = [
         menuHeading: 'Artificial Intelilgence',
         subMenuList: ['AI strategy', 'AI products', 'AI models', 'AI everywhere'],
         hideSubMenu: true,
+        
     },
     {
         menuHeading: 'Management Consulting',
@@ -35,7 +36,7 @@ export const menulist = [
     {
         menuHeading: 'Cloud engineering', 
         subMenuList: ['Cloud advisory', 'Plateform engineering', 'Cloud native development', 'Cloud data & AI'],
-        hideSubMenu: true,
+        hideSubMenu: false,
     },
     {
         menuHeading: 'Data',
@@ -45,6 +46,6 @@ export const menulist = [
     {
         menuHeading: 'Innovation',
         subMenuList: ['Innovation strategy', 'Products management', 'Products & service incubation', 'Products & Services ideation'],
-        hideSubMenu: true,
+        hideSubMenu: false,
     }
 ]
