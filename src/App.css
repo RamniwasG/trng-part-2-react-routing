@@ -4,10 +4,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vmin);
   color: black;
 }
 
 .nav-item {
   margin-right: 12px;
+}
+
+.nav-link.active {
+  color: #dc3545 !important;
+  text-decoration: underline;
+}
+
+.nav-item:hover {
+  color: #dc354599;
+  text-decoration: underline;
 }
